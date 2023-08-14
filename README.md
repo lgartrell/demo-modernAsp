@@ -1,5 +1,5 @@
 # Overview
-This is a ASP.NET (6.0) web server, configured to run as a web api. The server routes wildcard traffic to the react SPA entrypoint, while maintaining the ability to create any number of endpoints (controllers) as needed.
+This is a modern example of an ASP.NET (6.0) web server, built with modern standards. The server routes wildcard traffic to the react SPA entrypoint, while maintaining the ability to create any number of endpoints (controllers) as needed.
 
 ### Required Tools (tested with latest packages, should be backwards compatible to 5.0 at least, most likely further)
 * NPM (latest)
