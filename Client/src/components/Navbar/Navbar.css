@@ -1,0 +1,121 @@
+.navbar {
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr;
+   padding: 0.75rem;
+   /* box-shadow: 5px 1px 5px rgba(0, 0, 0, 0.3); */
+   box-shadow: 0 8px 5px -7px rgba(0, 0, 0, 0.15),
+      0 1px 1px 0 rgba(0, 0, 0, 0.14),
+      0 1px 3px 0 rgba(0, 0, 0, 0.12);
+
+   background: linear-gradient(to bottom, rgba(0, 0, 255, 0.1), white 100%),
+      linear-gradient(to bottom, rgba(255, 0, 0, 0.05), rgba(255, 255, 0, 0.05));
+}
+
+.navbar .teleLink {
+   border-bottom: 4px solid transparent;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   margin: auto;
+}
+
+.navbar .teleLink:hover {
+   border-bottom: 4px solid rgba(0, 0, 255, 0.1);
+}
+
+.navbar div {
+   display: flex;
+   flex-wrap: wrap;
+   align-items: center;
+}
+
+.leftNav {
+   margin-left: 5rem;
+   display: flex;
+   justify-content: space-between;
+}
+
+.rightNav {
+   justify-content: end;
+   margin-right: 5rem;
+}
+
+.title {
+   /* this will horizontally center align without needing to flex & center with justify */
+   margin: auto;
+
+   font-weight: bold;
+   font-size: 1.3rem;
+   max-width: -moz-fit-content;
+   max-width: fit-content;
+   border-bottom: 5px solid rgba(0, 0, 255, 0.1);
+}
+
+#btnSchedule {
+   background: #22C55E;
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+}
+
+#btnSchedule:hover {
+   background: #16A34A;
+}
+
+#btnLogout {
+   background: #EF4444;
+}
+
+#btnLogout:hover {
+   background: #DC2626;
+}
+
+.logoutIcon {
+   padding: 6px 15px;
+   padding-top: 0px;
+   padding-bottom: 16px;
+   display: flex;
+   position: relative;
+   flex-direction: column;
+}
+
+.logoutText {
+   font-size: 11px;
+   width: 100%;
+   position: absolute;
+   top: 100%;
+   left: 50%;
+   transform: translate(-50%, -90%);
+}
+
+.profileIcon {
+   background: var(--highlight);
+   border-radius: 50%;
+   padding: 0.4rem;
+   padding-top: 0.2rem;
+   font-size: 14px;
+   text-align: center;
+   margin-right: 5px;
+}
+
+.scheduleIcon {
+   padding: 0.4rem;
+   padding-top: 0.35rem;
+}
+
+.profileInfo {
+   display: flex;
+   flex-direction: column;
+   justify-content: end;
+   max-width: -moz-fit-content;
+   max-width: fit-content;
+}
+
+.profileInfo span:first-of-type::after {
+   content: '\25be';
+   margin-left: 3px;
+}
+
+.profileInfo span:last-of-type {
+   font-size: 9px;
+}

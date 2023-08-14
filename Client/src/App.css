@@ -1,0 +1,88 @@
+:root {
+   --bg-color: #FAFAFA;
+   --nav-color: #E1E1E1;
+   --highlight: rgba(0, 0, 255, 0.1);
+   --text-color: #42424d;
+
+   --btn-primary: #6366F1;
+   --btn-hover: #4F46E5;
+
+}
+
+hr {
+   width: 100%;
+   border: none;
+   height: 20px;
+   background: white;
+}
+
+@media (min-width: 900px) {
+   hr {
+      width: 100%;
+   }
+}
+
+@media (min-width: 1px) {
+   hr {
+      display: none;
+   }
+}
+
+#root {
+   position: absolute;
+   height: 100%;
+   width: 100%;
+   overflow: hidden;
+   color: var(--text-color);
+}
+
+.footer {
+   position: absolute;
+   bottom: 1%;
+   left: 50%;
+   transform: translate(-50%);
+   color: darkgray;
+   font-style: italic;
+   font-size: 9px;
+   text-align: center;
+}
+
+/* Buttons */
+
+.dashboard-button {
+   display: flex;
+   margin-left: 10px;
+   max-width: -moz-fit-content;
+   max-width: fit-content;
+   padding: 3px 10px;
+   background: var(--btn-primary);
+   color: white;
+   outline: 1px solid #efefef;
+   border-radius: 0.25rem;
+
+   border: none;
+
+   border-bottom: 3px solid transparent;
+   border-top: 1px solid transparent;
+
+   box-shadow: none;
+
+   transition: 0.2s;
+}
+
+.dashboard-button:hover {
+   background: var(--btn-hover);
+   border-bottom: 3px solid rgba(73, 73, 73, 0.8);
+   border-top: 1px solid rgb(233, 233, 233);
+   cursor: pointer;
+   color: white;
+}
+
+.dashboard-button:active {
+   border: none;
+   border-bottom: 3px solid rgba(0, 0, 0, 0.5);
+   border-top: 1px solid rgba(0, 0, 0, 0.5);
+
+   box-shadow: inset 0px 0px 5px rgba(0, 0, 0, 0.6);
+   outline: none;
+}
